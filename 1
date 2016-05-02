@@ -1,0 +1,38 @@
+把 以下jar复制到storm lib目录下
+
+storm-kafka-0.9.6.jar
+curator-framework-2.5.0.jar
+curator-client-2.5.0.jar
+curator-recipes-2.5.0.jar
+zookeeper-3.4.6.jar
+netty-3.7.0.Final.jar
+guava-16.0.1.jar
+scala-library-2.11.2.jar
+kafka_2.11-0.8.2.0.jar
+kafka-clients-0.8.2.0.jar
+lz4-1.2.0.jar
+snappy-java-1.1.1.6.jar
+scala-xml_2.11-1.0.2.jar
+metrics-core-2.2.0.jar
+jopt-simple-3.2.jar
+scala-parser-combinators_2.11-1.0.2.jar
+zkclient-0.3.jar
+
+
+
+
+安装
+http://dblab.xmu.edu.cn/blog/install-storm/
+
+bin/storm nimbus >>./nimbus.log 2>&1 &
+bin/storm supervisor >>./supervisor.log 2>&1 &
+
+bin/storm jar ./examples/storm-starter/storm-starter-topologies-0.9.6.jar storm.starter.WordCountTopology 
+
+
+
+
+
+
+
+
